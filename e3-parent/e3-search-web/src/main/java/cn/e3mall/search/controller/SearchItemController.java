@@ -32,7 +32,6 @@ public class SearchItemController {
         SearchResult searchResult = searchService.queryItem(keyword, page, searchRows);
         model.addAttribute("query", keyword);
         model.addAttribute("page", page);
-
         model.addAttribute("itemList", searchResult.getItemList());
         model.addAttribute("totalPages", searchResult.getTotalPages());
         model.addAttribute("recourdCount", searchResult.getRecourdCount());
